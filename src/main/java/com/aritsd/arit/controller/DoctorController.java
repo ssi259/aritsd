@@ -18,7 +18,7 @@ public class DoctorController {
     String getName(){
         return "Testing site";
     }
-    @GetMapping("/blog")
+    @GetMapping("/users")
     public List<User> index(){
         return userRepository.findAll();
     }
