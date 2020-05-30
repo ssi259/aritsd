@@ -3,5 +3,5 @@ package service;
 /**
  * @author Prashant
  */
-public interface DoctorInterface {
+public interface DoctorService {
 }
