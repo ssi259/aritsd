@@ -1,4 +1,4 @@
-package Repository;
+package repository;
 
 import org.springframework.stereotype.Repository;
 //check
