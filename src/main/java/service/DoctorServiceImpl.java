@@ -3,7 +3,6 @@ package service;
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import repository.ArDoctorRepository;
 import utils.BaseResponse;
 
