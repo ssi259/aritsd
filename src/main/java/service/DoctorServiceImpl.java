@@ -5,6 +5,7 @@ import com.sun.org.slf4j.internal.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import repository.ArDoctorRepository;
+import utils.BaseResponse;
 
 /**
  * @author Prashant
@@ -14,16 +15,18 @@ public class DoctorServiceImpl implements DoctorService {
  @Autowired
  private ArDoctorRepository arDoctorRepository;
 
- public ResponseEntity<?> createDoctorProfile(){
+ public BaseResponse createDoctorProfile(){
+  BaseResponse baseResponse =new BaseResponse();
   try {
    //
 
   }catch (Exception e){
    logger.error("Error while creating Doctor profile",e);
-   return ResponseEntity.ok(0);
+   baseResponse.setStatusCOde(0);
+   return baseResponse;
   }
-   ResponseEntity.ok(1);
-  return null;
+   baseResponse.setStatusCOde(1);
+  return baseResponse;
  }
 
 }
