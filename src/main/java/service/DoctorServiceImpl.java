@@ -4,7 +4,7 @@ import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.ArDoctorRepository;
-import utils.BaseResponse;
+import response.BaseResponse;
 
 /**
  * @author Prashant
@@ -14,8 +14,8 @@ public class DoctorServiceImpl implements DoctorService {
  @Autowired
  private ArDoctorRepository arDoctorRepository;
 
- public BaseResponse createDoctorProfile(){
-  BaseResponse baseResponse =new BaseResponse();
+ public BaseResponse<?> createDoctorProfile(){
+  BaseResponse baseResponse = new BaseResponse();
   try {
    //
 

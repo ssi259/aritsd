@@ -10,8 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotBlank;
 import java.sql.Timestamp;
 
 /**
@@ -74,7 +72,6 @@ public class Doctor {
     }
 
     @NotBlank(message = "MBBS pass out year cannot be blank")
-    @Digits(integer = 4,message = "Must be a number", fraction = 0)
     @Column(name = "year_passout_mbbs", nullable = false)
     public int getYearPassOutMbbs() {
         return yearPassOutMbbs;
@@ -94,7 +91,6 @@ public class Doctor {
     }
 
     @NotBlank(message = "Masters passing out year cannot be blank")
-    @Digits(integer = 4,message = "Must be a number", fraction = 0)
     @Column(name = "year_passout_masters", nullable = false)
     public int getYearPassOutMasters() {
         return yearPassOutMasters;
