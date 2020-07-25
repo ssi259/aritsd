@@ -17,7 +17,7 @@ public class DoctorServiceImpl implements DoctorService {
  public BaseResponse<?> createDoctorProfile(){
   BaseResponse baseResponse = new BaseResponse();
   try {
-   //
+
 
   }catch (Exception e){
    logger.error("Error while creating Doctor profile",e);
